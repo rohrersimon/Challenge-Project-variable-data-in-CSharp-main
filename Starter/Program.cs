@@ -137,9 +137,9 @@ do
             while (dogCharacteristic == "")
             {
                 // #2 have user enter multiple comma separated characteristics to search for
-                Console.WriteLine($"\r\nEnter one desired dog characteristic to search for");
+                Console.WriteLine($"\r\nEnter dog characteristics to search for separated by commas");
                 readResult = Console.ReadLine();
-                if (readResult != null)
+                if (readResult != null && readResult != "")
                 {
                     dogCharacteristic = readResult.ToLower().Trim();
                     Console.WriteLine();
